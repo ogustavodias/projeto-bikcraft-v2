@@ -1,0 +1,38 @@
+@charset "UTF-8";
+@import url(./global.css);
+
+.ext-small-font {
+    font-size: var(--ext-small-font);
+}
+
+.small-font {
+    font-size: var(--small-font);
+}
+
+.normal-font {
+    font-size: var(--normal-font);
+}
+
+.large-font {
+    font-size: var(--large-font);
+}
+
+.ext-large-font {
+    font-size: var(--ext-large-font);
+}
+
+.poppins {
+    font-family: var(--poppins);
+}
+
+.roboto {
+    font-family: var(--roboto);
+}
+
+.merriweather {
+    font-family: var(--merriweather);
+}
+
+.detail {
+    color: var(--p1);
+}
