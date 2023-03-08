@@ -33,6 +33,22 @@
     font-family: var(--merriweather);
 }
 
+.wght-400 {
+    font-weight: 400;
+}
+
+.wght-500 {
+    font-weight: 500;
+}
+
+.wght-600 {
+    font-weight: 600;
+}
+
+.ln {
+    line-height: 1.125;
+}
+
 .detail {
     color: var(--p1);
 }

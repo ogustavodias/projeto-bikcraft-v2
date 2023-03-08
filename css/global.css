@@ -39,3 +39,7 @@
     --ext-large-font: 4rem;
     /* 64px */
 }
+
+img {
+    max-width: 100%;
+}

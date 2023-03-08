@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+section.background {
+    background: linear-gradient(var(--c12) 85%, var(--w)85%);
+    color: var(--w);
+}
+
+section.background p {
+    color: var(--c5);
+}
+
+section.background .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 40px;
+}
+
+section.background .content {
+    display: grid;
+    gap: 20px;
+}
+
+section.background .content h1 {
+    margin-bottom: 20px;
+}
+
+section.background picture img {
+    object-fit: cover;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1100px) {
+    section.background .container {
+        grid-template-columns: 1fr;
+    }
+
+    section.background .container img {
+        max-height: 250px
+    }
+}
