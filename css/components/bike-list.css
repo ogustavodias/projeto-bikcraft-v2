@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+section.bike-list .container:not(h2) {
+    max-width: 1440px;
+    display: flex;
+    gap: 40px;
+    overflow-x: auto;
+}
+
+section.bike-list .bike-card {
+    min-width: 250px;
+}
+
+section.bike-list h3 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--c11);
+}
+
+section.bike-list h3::before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 8px;
+    background: var(--p1);
+    transition: width .3s linear;
+}
+
+section.bike-list a:hover h3::before {
+    width: 24px;
+}
+
+section.bike-list span.price {
+    margin-left: 17px;
+    color: var(--c8);
+}
