@@ -12,13 +12,14 @@ section.background p {
 section.background .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    align-items: center;
     gap: 40px;
 }
 
 section.background .content {
     display: grid;
     gap: 20px;
+    align-self: end;
+    padding-bottom: 170px;
 }
 
 section.background .content h1 {
@@ -36,6 +37,91 @@ section.background picture img {
     }
 
     section.background .container img {
-        max-height: 250px
+        max-height: 300px
+    }
+
+    section.background .content {
+        padding-bottom: 0;
+    }
+
+    section.background .content h1 {
+        margin-bottom: 0;
+    }
+}
+
+section.technology {
+    background-color: var(--c11);
+    box-shadow: inset 0 80px var(--w), inset 0 -80px var(--w);
+    color: var(--w);
+}
+
+section.technology .content>span,
+section.technology p {
+    color: var(--c5);
+}
+
+section.technology .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+section.technology .content {
+    padding: 140px 0;
+    display: grid;
+    align-content: start;
+    gap: 20px;
+}
+
+section.technology .content a.link {
+    color: var(--p1);
+    display: block;
+    width: max-content;
+    margin-bottom: 40px;
+}
+
+section.technology .content a.link:hover {
+    color: var(--w);
+}
+
+section.technology .content a.link::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: currentColor;
+}
+
+section.technology .content .benefits {
+    display: flex;
+    gap: 40px;
+}
+
+section.technology .content .benefits h3 {
+    margin-bottom: 8px;
+}
+
+section.technology picture img {
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+}
+
+@media only screen and (max-width: 900px) {
+
+    section.technology picture img {
+        display: none;
+    }
+
+    section.technology .container {
+        grid-template-columns: 1fr;
+    }
+
+    section.technology {
+        box-shadow: none;
+    }
+
+    section.technology .content {
+        padding: 20px 0;
     }
 }
