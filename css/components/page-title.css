@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+.page-title {
+    padding: 40px 0px;
+    background-color: var(--c11);
+}
+
+.page-title h1 {
+    color: var(--w);
+}
+
+.page-title .container>span {
+    color: var(--c5);
+}

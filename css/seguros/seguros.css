@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+
+section.vantagens {
+    background-color: var(--c12);
+    padding: 60px 0px;
+    color: var(--w);
+}
+
+section.vantagens p {
+    color: var(--c5);
+}
+
+section.vantagens h2 {
+    margin-bottom: 40px;
+}
+
+section.vantagens .container ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+section.vantagens .container ul h3 {
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 500px) {
+    section.vantagens {
+        padding: 20px 0px;
+    }
+}

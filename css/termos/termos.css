@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+main {
+    padding: 60px 0px;
+}
+
+main .container {
+    display: grid;
+    gap: 20px;
+}
+
+main .container p {
+    max-width: 75ch;
+}
