@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+body {
+    background-color: var(--c1);
+}
+
+section.lojas {
+    padding: 60px 0;
+}
+
+section.lojas .container>h2 {
+    margin-bottom: 40px;
+}
+
+section.lojas address {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+section.lojas address img {
+    width: 100%;
+    border-radius: unset;
+}
+
+section.lojas address .card {
+    background: var(--w);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+section.lojas address .card .conteudo {
+    padding: 32px;
+}
+
+section.lojas address .card .conteudo {
+    display: grid;
+    gap: 40px;
+}
+
+section.lojas address .card .conteudo ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+section.lojas address .card .conteudo li {
+    color: var(--c8);
+    border-left: 2px solid var(--c2);
+    padding-left: 10px;
+}
+
+section.lojas address .card .conteudo span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+section.lojas address .card .conteudo span::before {
+    display: block;
+    content: url(../../imgs/icones/horario.svg);
+    height: 22px;
+}
+
+@media only screen and (max-width: 1000px) {
+    section.lojas address .card .conteudo ul li:nth-child(2) {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    section.lojas address {
+        grid-template-columns: 1fr;
+    }
+}
