@@ -27,6 +27,7 @@ section.lojas address .card {
     background: var(--w);
     border-radius: 4px;
     overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
 }
 
 section.lojas address .card .conteudo {
@@ -70,5 +71,119 @@ section.lojas address .card .conteudo span::before {
 @media only screen and (max-width: 700px) {
     section.lojas address {
         grid-template-columns: 1fr;
+    }
+}
+
+section.form {
+    background: linear-gradient(var(--c11) 50%, var(--c1) 50%);
+}
+
+section.form .container {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    padding: unset;
+}
+
+section.form address {
+    color: var(--w);
+    background-color: var(--c12);
+    border-radius: 4px 0px 0px 4px;
+    padding: 60px;
+}
+
+section.form address h3 {
+    margin-bottom: 60px;
+}
+
+section.form address ul {
+    display: grid;
+    gap: 10px;
+}
+
+section.form address li {
+    color: var(--c5);
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-left: 20px;
+}
+
+section.form address li:first-child::before {
+    display: inline-block;
+    content: url(../../imgs/icones/local.svg);
+    position: absolute;
+}
+
+section.form address li:nth-child(4)::before {
+    display: inline-block;
+    content: url(../../imgs/icones/email.svg);
+    position: absolute;
+}
+
+section.form address li:nth-child(6)::before {
+    display: inline-block;
+    content: url(../../imgs/icones/telefone.svg);
+    position: absolute;
+}
+
+section.form address li::before {
+    left: -25px;
+}
+
+section.form address li:nth-child(3),
+section.form address li:nth-child(5),
+section.form address li:nth-child(6) {
+    margin-bottom: 30px;
+}
+
+section.form address li:last-child {
+    display: flex;
+    gap: 20px;
+}
+
+section.form address a:hover {
+    color: var(--w);
+}
+
+section.form form {
+    padding: 60px;
+    border-radius: 0px 4px 4px 0px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: start;
+    gap: 20px;
+}
+
+section.form form .email,
+section.form form .mensagem,
+.botao {
+    grid-column: 1/-1;
+}
+
+section.form form label {
+    margin-bottom: 5px;
+}
+
+section.form form input,
+section.form form textarea {
+    width: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+    section.form form div {
+        grid-column: 1/-1;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    section.form .container {
+        grid-template-columns: 1fr;
+    }
+
+    section.form address,
+    section.form form {
+        padding: 40px 60px;
     }
 }
