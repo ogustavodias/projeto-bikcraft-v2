@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+main.bikes .card-bike {
+    padding: 40px 0;
+}
+
+main.bikes .card-bike .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+main.bikes .card-bike img:not([src$='svg']) {
+    width: 100%;
+}
+
+main.bikes .card-bike img:not([src$='jpg']) {
+    width: 24px;
+}
+
+main.bikes .card-bike picture {
+    position: relative;
+}
+
+main.bikes .card-bike picture span {
+    position: absolute;
+    color: var(--w);
+    right: 5px;
+    top: 20px;
+    display: block;
+    padding: 5px;
+    background-color: var(--c12);
+    border-radius: 4px;
+    border: 1px solid var(--c11);
+    transition: transform .3s linear;
+}
+
+main.bikes .card-bike .container:hover span {
+    transform: translateX(12px);
+}
+
+main.bikes .card-bike .conteudo {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: start;
+    gap: 10px;
+}
+
+main.bikes .card-bike .conteudo h2,
+main.bikes .card-bike .conteudo p {
+    grid-column: 1/-1;
+}
+
+main.bikes .card-bike .conteudo p,
+main.bikes .card-bike .conteudo li {
+    color: var(--c8);
+}
+
+main.bikes .card-bike .conteudo h2::before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 8px;
+    background-color: var(--p1);
+}
+
+main.bikes .card-bike .conteudo .botao {
+    align-self: center;
+}
+
+main.bikes .card-bike .conteudo .botao::after {
+    display: inline-block;
+    content: url(../../imgs/icones/seta.svg);
+    margin-left: 15px;
+}
+
+main.bikes .card-bike .conteudo ul {
+    display: grid;
+    gap: 10px;
+}
+
+main.bikes .card-bike .conteudo ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+main.bikes .card-bike:nth-child(2) {
+    background: linear-gradient(to right, var(--w) 35%, var(--c12)35%);
+    color: var(--w);
+}
+
+main.bikes .card-bike:nth-child(2) p,
+main.bikes .card-bike:nth-child(2) li {
+    color: var(--c5);
+}
+
+@media only screen and (max-width: 800px) {
+    main.bikes .card-bike .container {
+        grid-template-columns: 1fr;
+    }
+
+    main.bikes .card-bike:nth-child(2) {
+        background: var(--c12);
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    main.bikes .card-bike .conteudo {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
