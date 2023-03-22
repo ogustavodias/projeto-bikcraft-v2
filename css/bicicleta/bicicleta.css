@@ -96,3 +96,53 @@ main .ficha-tecnica .conteudo p span {
         flex-direction: column;
     }
 }
+
+section.bike-list .container:not(h2) {
+    max-width: 1200px;
+}
+
+section.seguro {
+    background-color: var(--c11);
+    box-shadow: inset 0px 120px 0px 0px var(--w), inset 0px -120px 0px 0px var(--c12);
+    color: var(--w);
+    margin-top: 120px;
+}
+
+section.seguro .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding: 0 20px;
+}
+
+section.seguro .container picture img {
+    height: 100%;
+    object-fit: cover;
+}
+
+section.seguro .container .conteudo {
+    display: grid;
+    gap: 20px;
+    padding: 180px 0;
+    align-self: start;
+}
+
+@media only screen and (max-width: 900px) {
+
+    section.seguro {
+        box-shadow: inset 0px -120px 0px 0px var(--c12);
+    }
+
+    section.seguro .container {
+        grid-template-columns: 1fr;
+    }
+
+    section.seguro .container picture {
+        order: 2;
+    }
+
+    section.seguro .container .conteudo {
+        padding: 40px 0 0;
+    }
+
+}
