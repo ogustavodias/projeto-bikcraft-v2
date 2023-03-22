@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+main {
+    background-color: var(--c11);
+    color: var(--w);
+}
+
+main .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+main .container>picture img {
+    width: 100%;
+}
+
+main .container>.conteudo {
+    display: grid;
+    gap: 20px;
+}
+
+main .container>.conteudo p,
+main .container>.conteudo span {
+    color: var(--c5);
+}
+
+main .container>.conteudo .botao-container {
+    display: flex;
+    gap: 20px;
+}
+
+main .container>.conteudo .botao-container div {
+    display: grid;
+    align-content: space-around;
+}
+
+main .container>.conteudo .botao-container span {
+    display: flex;
+    gap: 10px;
+    background-color: var(--c12);
+    padding: 5px;
+    border-radius: 4px;
+    max-width: max-content;
+}
+
+main .vantagens>h2 {
+    margin-bottom: 10px;
+}
+
+main .vantagens ul {
+    background-color: var(--c12);
+    border-radius: 4px;
+    padding: 32px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 40px;
+}
+
+main .vantagens ul li {
+    display: grid;
+    gap: 5px;
+}
+
+main .ficha-tecnica h2 {
+    margin-bottom: 10px;
+}
+
+main .ficha-tecnica .conteudo {
+    background-color: var(--c12);
+    padding: 32px;
+}
+
+main .ficha-tecnica .conteudo p {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+main .ficha-tecnica .conteudo p:not(:last-child) {
+    border-bottom: 1px solid var(--c11);
+}
+
+main .ficha-tecnica .conteudo p span {
+    color: var(--c6);
+}
+
+@media only screen and (max-width: 1000px) {
+    main .container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    main .container>.conteudo .botao-container {
+        flex-direction: column;
+    }
+}
