@@ -17,4 +17,5 @@ form textarea {
     border-radius: 4px;
     background-color: var(--c1);
     border: 1px solid var(--c2);
+    font-family: var(--roboto);
 }
