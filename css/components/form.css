@@ -18,4 +18,5 @@ form textarea {
     background-color: var(--c1);
     border: 1px solid var(--c2);
     font-family: var(--roboto);
+    width: 100%;
 }

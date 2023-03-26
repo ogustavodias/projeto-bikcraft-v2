@@ -1,11 +1,26 @@
 @charset "UTF-8";
 
+body {
+    background-color: var(--c1);
+}
+
+form {
+    background-color: unset;
+}
+
+main form.container {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+}
+
 main form .side-bar {
     background-color: var(--c12);
     color: var(--c5);
     padding: 60px;
     display: grid;
     gap: 40px;
+    align-content: start;
+    border-radius: 4px 0px 0px 4px;
 }
 
 main form .side-bar div[class*="menu"] {
@@ -17,14 +32,14 @@ main form .side-bar .menu-1 {
     grid-template-columns: repeat(2, 1fr);
 }
 
-main form .side-bar h2 {
+main form h2 {
     position: relative;
     display: flex;
     align-items: center;
     grid-column: 1/-1;
 }
 
-main form .side-bar h2::before {
+main form h2::before {
     position: absolute;
     left: -14px;
     content: "";
@@ -99,6 +114,7 @@ main form .side-bar .menu-2 .detalhe-produto {
     padding: 20px;
     background-color: var(--w);
     border-radius: 4px;
+    display: none;
 }
 
 main form .side-bar .menu-2 .detalhe-produto ul {
@@ -114,6 +130,20 @@ main form .side-bar .menu-2 .detalhe-produto li {
 
 main form .side-bar .menu-2 .detalhe-produto li img {
     width: 18px;
+}
+
+main form .form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 60px;
+    background-color: var(--w);
+    border-radius: 0 4px 4px 0;
+}
+
+main form .form .cpf-container,
+main form .form .email-container {
+    grid-column: 1/-1;
 }
 
 
