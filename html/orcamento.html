@@ -37,26 +37,26 @@
     <main>
         <form class="container poppins">
             <div class="side-bar">
-                <div class="menu-1">
+                <div class="menu-1 ativo">
                     <h2 class="ext-small-font">BIKCRAFT OU SEGURO?</h2>
                     <div class="input-container">
-                        <input type="radio" name="tipo-produto" id="bikcraft">
-                        <label for="bikcraft">Bikcraft</label>
+                        <input type="radio" name="tipo-produto" value="bikcraft" id="bikcraft" data-menu="2">
+                        <label for="bikcraft" data-menu="2">Bikcraft</label>
                     </div>
                     <div class="input-container">
-                        <input type="radio" name="tipo-produto" id="seguro">
-                        <label for="seguro">Seguro</label>
+                        <input type="radio" name="tipo-produto" value="seguro" id="seguro" data-menu="3">
+                        <label for="seguro" data-menu="3">Seguro</label>
                     </div>
                 </div>
 
-                <div class="menu-2">
+                <div class="menu-2" data-menu="2">
                     <h2 class="ext-small-font">ESCOLHA A SUA</h2>
                     <div class="input-container">
                         <input type="radio" name="modelo-bike" id="nimbus">
-                        <label for="nimbus">Nimbus Stark</label>
+                        <label for="nimbus" data-bike="nimbus">Nimbus Stark</label>
                         <span class="price ext-small-font">R$ 4999</span>
                     </div>
-                    <div class="detalhe-produto">
+                    <div class="detalhe-produto" data-bike="nimbus">
                         <ul class="ext-small-font poppins">
                             <li><img src="../imgs/icones/eletrica.svg" alt="Eletric Bike Icon">Motor Elétrico</li>
                             <li><img src="../imgs/icones/carbono.svg" alt="Waves Icon">Fibra de Carbono</li>
@@ -70,10 +70,10 @@
 
                     <div class="input-container">
                         <input type="radio" name="modelo-bike" id="magic">
-                        <label for="magic">Magic Might</label>
+                        <label for="magic" data-bike="magic">Magic Might</label>
                         <span class="price ext-small-font">R$ 2499</span>
                     </div>
-                    <div class="detalhe-produto">
+                    <div class="detalhe-produto" data-bike="magic">
                         <ul class="ext-small-font poppins">
                             <li><img src="../imgs/icones/eletrica.svg" alt="Eletric Bike Icon">Motor Elétrico</li>
                             <li><img src="../imgs/icones/carbono.svg" alt="Waves Icon">Fibra de Carbono</li>
@@ -87,10 +87,10 @@
 
                     <div class="input-container">
                         <input type="radio" name="modelo-bike" id="nebula">
-                        <label for="nebula">Nebula Cosmic</label>
+                        <label for="nebula" data-bike="nebula">Nebula Cosmic</label>
                         <span class="price ext-small-font">R$ 3999</span>
                     </div>
-                    <div class="detalhe-produto">
+                    <div class="detalhe-produto" data-bike="nebula">
                         <ul class="ext-small-font poppins">
                             <li><img src="../imgs/icones/eletrica.svg" alt="Eletric Bike Icon">Motor Elétrico</li>
                             <li><img src="../imgs/icones/carbono.svg" alt="Waves Icon">Fibra de Carbono</li>
@@ -103,15 +103,15 @@
                     </div>
                 </div>
 
-                <div class="menu-3">
+                <div class="menu-3" data-menu="3">
                     <h2 class="ext-small-font">ESCOLHA O PLANO</h2>
                     <div class="input-container">
-                        <input type="radio" name="modelo-seguro" id="prata">
+                        <input type="radio" name="modelo-seguro" value="prata" id="prata">
                         <label for="prata">Prata</label>
                         <span class="price ext-small-font">R$ 199</span>
                     </div>
                     <div class="input-container">
-                        <input type="radio" name="modelo-seguro" id="ouro">
+                        <input type="radio" name="modelo-seguro" value="ouro" id="ouro">
                         <label for="ouro">Ouro</label>
                         <span class="price ext-small-font">R$ 299</span>
                     </div>
@@ -196,6 +196,8 @@
         </div>
         <p class="container copy roboto small-font">Bikcraft © Alguns direitos reservados.</p>
     </footer>
+
+    <script src="../js/orcamento.js"></script>
 </body>
 
 </html>

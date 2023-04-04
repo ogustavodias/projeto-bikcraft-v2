@@ -22,17 +22,22 @@ main form .side-bar {
     color: var(--c5);
     padding: 60px;
     display: grid;
+    align-content: start;
     gap: 40px;
     border-radius: 4px 0px 0px 4px;
 }
 
 main form .side-bar div[class*="menu"] {
-    display: grid;
+    display: none;
     gap: 20px;
 }
 
 main form .side-bar .menu-1 {
     grid-template-columns: repeat(2, 1fr);
+}
+
+.ativo {
+    display: grid !important;
 }
 
 main form h2 {
@@ -110,14 +115,13 @@ main form .side-bar .input-container label::before {
 }
 
 main form .side-bar .menu-2 .detalhe-produto {
-    display: grid;
+    display: none;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 10px;
     padding: 20px;
     background-color: var(--w);
     border-radius: 4px;
-    /* display: none; */
 }
 
 main form .side-bar .menu-2 .detalhe-produto ul {
